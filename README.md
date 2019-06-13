@@ -20,6 +20,14 @@ In my experience usually these issues can be picked up from event viewer or logs
 
 As the scenario I’m walking you through involves investigating a crashed worker process after it has become unstable, we’ll be using the –hang option. This simply takes a memory dump of the entire worker process for investigation.
 
+### Alternative to adplus: procdump
+
+Documentation: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
+
+```bash
+.\procdump64.exe -e 1 -ma -f "*UriFormatException" 18856 D:\temp\dumps\
+```
+
 ## Sequence
 
 Copy the following dlls to the location of the .dump file:
