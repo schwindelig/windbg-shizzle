@@ -70,6 +70,7 @@ C:\Windows\Microsoft.NET\[Framework or Framework64]\[Framework Version #]\mscord
 - `dt nt!_GUID <address_of_object>` - dump guid
 
 - `!refs <address>` (from SOSex) - like `gcroot`, but better
+- `!SyncBlk` - dump information about anyone using lock()
 
 ## Misc
 
