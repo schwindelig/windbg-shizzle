@@ -67,7 +67,7 @@ C:\Windows\Microsoft.NET\[Framework or Framework64]\[Framework Version #]\mscord
 - `!heapstat` - statistics about heap
 - `!objsize <address to object>` - this command takes an object as (a parameter and counts the number of objects it keeps alive as well as reports (the total size of all objects the given object keeps alive.)
 
-- `dt nt!_GUID <address_of_object>` - dump guid
+- `dt nt!_GUID <address_of_object>` - dump guid. You might need to use `dt nt!_GUID <address_of_object>+8` if you are testing on a 64bit machine.
 
 - `!refs <address>` (from SOSex) - like `gcroot`, but better
 - `!SyncBlk` - dump information about anyone using lock()
